@@ -1,19 +1,10 @@
 from django.contrib import admin
-from .models import Post,Contact,Category,CommentPost
+from .models import Post
 
 
-admin.site.register(Category)
-admin.site.register(Contact)
-admin.site.register(CommentPost)
+admin.site.register(Post)
 
 
-
-@admin.register(Post)
-class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'created', 'status')  
-    list_filter = ('status',) 
-    search_fields = ('title', 'body') 
-    prepoplated_files={'slug':('title',)}
 
 
 # @admin.register(Category)

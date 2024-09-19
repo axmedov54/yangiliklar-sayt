@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content%}
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="menu-item">
+        <img src="{{post.photo.url}}" alt="{{post.title}}" class="menu-img">
+            <div class="menu-details">
+                <h2 class="menu-title">{{post.title}}</h2>
+                <h3 class="menu-price">{{post.narxi}} UZS</h3>
+                <div class="quantity-control">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <span id="quantity">1 dona</span>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <input type="text" id="amount" value="{{post.narxi}}" readonly>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>
+{% endblock %}

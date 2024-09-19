@@ -1,0 +1,61 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menu-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.menu-details {
+    flex-grow: 1;
+}
+
+.menu-title, .menu-price {
+    margin: 0;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-control button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.quantity-control span {
+    width: 50px;
+    text-align: center;
+}
+
+.order-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
